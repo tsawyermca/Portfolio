@@ -80,60 +80,85 @@ footer{
     }
 }
 
-#gallerywrapper {
-    width:640px;
-    height:450px;
-    margin:0 auto;
-    position:relative;
-    font-family:verdana, arial, sans-serif;
-} 
+.carousel-inner img {
+    height: 400px;
+    object-fit: contain;
+}
 
-#gallerywrapper #gallery {
-    position:absolute;
-    left:0;
-    top:0;
-    height:450px;
-    width:640px;
-    overflow:hidden;
-    text-align:center;
-} 
+.carousel-item {
+    transition: linear;
+}
 
-#gallerywrapper #gallery div {
-    width:640px; height:900px; 
-    padding-top:10px; 
-    position:relative;
-} 
+.carousel-inner .carousel-item {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
 
-#gallerywrapper #gallery div img {
-    clear:both; 
-    display:block; 
-    margin:0 auto; 
-    border:0;
-} 
+.carousel-inner .carousel-item.active {
+    opacity: 1;
+    position: relative;
+}
 
-#gallerywrapper #gallery div h3 {
-    padding:10px 0 0 0; 
-    margin:0; 
-    font-size:18px;
-} 
+.carousel-captions {
+    text-align: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
 
-#gallerywrapper #gallery div p {
-    padding:5px 0; 
-    margin:0; 
-    font-size:12px; 
-    line-height:18px;
-} 
+.carousel-captions .caption {
+    display: none;
+}
 
-#gallery .previous{ 
-    display:inline;
-    float:left;
-    margin-left:80px;
-    text-decoration:none;
-} 
+.carousel-captions .caption.active {
+    display: block;
+}
 
-#gallery .next{ 
-    display:inline;
-    float:right;
-    margin-right:80px;
-    text-decoration:none;
+.carousel-captions h5 {
+    color: #274c77;
+    margin-bottom: 5px;
+}
+
+.carousel-captions p {
+    color: #274c77;
+    margin-bottom: 0;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 24px;
+    height: 24px;
+}
+
+@media (max-width: 768px) {
+    .carousel-inner img {
+        height: 300px;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 30px;
+        height: 30px;
+    }
+
+    .carousel-captions h5 {
+        font-size: 1rem;
+    }
+
+    .carousel-captions p {
+        font-size: 0.875rem;
+    }
 }

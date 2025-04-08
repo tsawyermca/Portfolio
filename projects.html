@@ -23,57 +23,71 @@
     </header>
     <main role="main">
        <section>
-        <div class="sec1">
+        <div class="sec1 container">
+            <div class="col-md-4"></div>
             <h3>My Projects</h3>
-            <div id="gallerywrapper">
-                <div id="gallery">
-                    <div id="pic1">
-                        <a href="https://github.com/tsawyermca/Detroix2" target="_blank">
-                            <img src="./images/templatedetroix.png" height="40%" width="35%" alt="Image of Detroix website template">
-                        </a>
-                        <a class="previous" href="#pic5">&lt;</a>
-                        <a class="next" href="#pic2">&gt;</a>
-                        <h3>Detroix</h3>
-                        <p>Website Template I recreated using html and css</p>
+                <div id="gallery1" class="carousel slide mb-4">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="https://github.com/tsawyermca/Detroix2" target="_blank">
+                                <img src="./images/templatedetroix.png" class="d-block w-100" alt="Image of Detroix website Template">
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://github.com/tsawyermca/Airbox-Project" target="_blank">
+                                <img src="./images/airboxtemplate.png" class="d-block w-100" alt="Image of Airbox website Template">
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://github.com/tsawyermca/Prechu-Project" target="_blank">
+                                <img src="./images/prechutemplate.png" class="d-block w-100" alt="Image of Prechu website Template">
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://github.com/tsawyermca/Bloom-Project" target="_blank">
+                                <img src="./images/bloom-template.png" class="d-block w-100" alt="Image of Bloom website Template">
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://github.com/tsawyermca/Duckfiles" target="_blank">
+                                <img src="./images/duckfiles_template.jpg" class="d-block w-100" alt="Image of Duckfiles website Template">
+                            </a>
+                        </div>
                     </div>
-                    <div id="pic2">
-                        <a href="https://github.com/tsawyermca/Airbox-Project" target="_blank">
-                            <img src="./images/airboxtemplate.png" height="40%" width="35%" alt="Image of Airbox website template">
-                        </a>
-                        <a class="previous" href="#pic1">&lt;</a>
-                        <a class="next" href="#pic3">&gt;</a>
-                        <h3>Airbox</h3>
-                        <p>Website Template I recreated using html and css</p>
+
+                   <div class="carousel-captions">
+                        <div class="caption active" data-slide="0">
+                            <h5>Detroix</h5>
+                            <p>Recreated Website Template using HTML and CSS</p>
+                        </div>
+                        <div class="caption" data-slide="1">
+                            <h5>Airbox</h5>
+                            <p>Recreated Website Template using HTML and CSS</p>
+                        </div>
+                        <div class="caption" data-slide="2">
+                            <h5>Prechu</h5>
+                            <p>Recreated Website Template using HTML and CSS</p>
+                        </div>
+                        <div class="caption" data-slide="3">
+                            <h5>Bloom</h5>
+                            <p>Recreated Website Template using HTML, CSS, and Bootstrap</p>
+                        </div>
+                        <div class="caption" data-slide="4">
+                            <h5>Duckfiles</h5>
+                            <p>Recreated Website Template using HTML, CSS, and Bootstrap</p>
+                        </div>
                     </div>
-                    <div id="pic3">
-                        <a href="https://github.com/tsawyermca/Prechu-Project" target="_blank">
-                            <img src="./images/prechutemplate.png" height="40%" width="35%" alt="Image of Prechu website template">
-                        </a>
-                        <a class="previous" href="#pic2">&lt;</a>
-                        <a class="next" href="#pic4">&gt;</a>
-                        <h3>Prechu</h3>
-                        <p>Website Template I recreated using html and css</p>
-                    </div>
-                    <div id="pic4">
-                        <a href="https://github.com/tsawyermca/Bloom-Project" target="_blank">
-                            <img src="./images/bloom-template.png" height="40%" width="35%" alt="Image of Bloom website template">
-                        </a>
-                        <a class="previous" href="#pic3">&lt;</a>
-                        <a class="next" href="#pic5">&gt;</a>
-                        <h3>Bloom</h3>
-                        <p>Website Template I recreated using html, css, and bootstrap</p>
-                    </div>
-                    <div id="pic5">
-                        <a href="https://github.com/tsawyermca/Duckfiles">
-                            <img src="./images/duckfiles_template.jpg" height="40%" width="35%" alt="Image of Duckfiles website template">
-                        </a>
-                        <a class="previous" href="#pic4">&lt;</a>
-                        <a class="next" href="#pic1">&gt;</a>
-                        <h3>Duckfiles</h3>
-                        <p>Website Template I recreated using html, css, and bootstrap</p>
-                    </div>
+                    
+                    <button class="carousel-control-prev" type="button" data-bs-target="#gallery1" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#gallery1" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-            </div>
+        </div>
        </section>
     </main>
     <footer>
@@ -91,5 +105,16 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        // Sync captions with carousel slides
+        document.querySelectorAll('.carousel').forEach(carousel => {
+            carousel.addEventListener('slide.bs.carousel', function (e) {
+                const captions = this.querySelector('.carousel-captions').children;
+                Array.from(captions).forEach(caption => caption.classList.remove('active'));
+                captions[e.to].classList.add('active');
+            });
+        });
+    </script>
 </body>
 </html>
